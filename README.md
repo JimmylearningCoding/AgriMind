@@ -32,7 +32,7 @@
 
 <div align="center">
   <a href="https://github.com/JimmylearningCoding/AgriMind">
-    <img src="images/wokong.jpg" alt="Logo" width="80" height="80">
+    <img src="images/wukong.jpg" alt="Logo" width="80" height="80">
   </a>
 
 
