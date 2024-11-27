@@ -61,24 +61,24 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
+      <a href="#News">News</a>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
+      <a href="#About The Project">About The Project</a>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li>
+      <a href="#Built With">Built With</a>
+    </li>
+    <li>
+      <a href="#Demo">Demo</a>
+    </li>
+    <li><a href="#Model Collection">Model Collection</a></li>
+    <li><a href="#Future Plan">Future Plan</a></li>
+    <li><a href="#Quick Start">Quick Start</a></li>
+    <li><a href="#License">License</a></li>
+    <li><a href="#Contact">Contact</a></li>
+    <li><a href="#Acknowledgments">Acknowledgments</a></li>
+    <li><a href="#Star History">Star History</a></li>
   </ol>
 </details>
 
@@ -195,9 +195,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 # Acknowledgments
 
-* []()
-* []()
-* []()
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
