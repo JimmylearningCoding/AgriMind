@@ -39,7 +39,7 @@
 <h1 align="center">AgriMind</h1>
 
   <p align="center">
-    AgriMind: The smart ally every farmer truly needs.
+    AgriMind: The smart ally that every farmer truly needs.
     <br />
     <a href="https://github.com/JimmylearningCoding/AgriMind"><strong>Explore the project »</strong></a>
     <br />
