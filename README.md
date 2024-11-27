@@ -86,14 +86,7 @@
 <!-- Latest News -->
 # News
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -168,10 +161,10 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 
 <!-- Top contributors -->
-# Top contributors:
+# Top Contributors
 
-<a href="https://github.com/github_username/repo_name/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=github_username/repo_name" alt="contrib.rocks image" />
+<a href="https://github.com/JimmylearningCoding/AgriMind/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=JimmylearningCoding/AgriMind" alt="contrib.rocks image" />
 </a>
 
 
