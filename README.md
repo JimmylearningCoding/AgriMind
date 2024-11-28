@@ -94,7 +94,7 @@
 <!-- ABOUT THE PROJECT -->
 
 # About The Project
-
+### 初代架构图
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 ### 农业出路在科技，智慧点亮新农田！
 为应对农业生产中病虫害、作物种植技术落后等难题，我们整合各大害虫防治秘笈、种植宝典、科研报告等权威数据，推出AgriMind——一款聚焦农作物种植的智能问答模型大模型。AgriMind如同农田里的"诸葛孔明",为农民、中小企业、研究人员提供精准解答和科学决策支持，用LLM助力丰收，推动乡村振兴。
