@@ -24,13 +24,13 @@ from xtuner.utils import PROMPT_TEMPLATE, SYSTEM_TEMPLATE
 #                          PART 1  Settings                           #
 #######################################################################
 # Model
-pretrained_model_name_or_path = 'internlm/internlm2-1_8b'
+pretrained_model_name_or_path = '/root/AgriMind/finetune/model/Internlm2-1_8B'
 use_varlen_attn = False
 
 # Data
-alpaca_en_path = 'tatsu-lab/alpaca'
+alpaca_en_path = 'AgriMind/dataset/xtuner_finetune_agri_data.json'
 prompt_template = PROMPT_TEMPLATE.default
-max_length = 2048
+max_length = 1024
 pack_to_max_length = True
 
 # parallel
@@ -57,7 +57,7 @@ save_total_limit = 2  # Maximum checkpoints to keep (-1 means unlimited)
 evaluation_freq = 500
 SYSTEM = SYSTEM_TEMPLATE.alpaca
 evaluation_inputs = [
-    '请给我介绍五个上海的景点', 'Please tell me five scenic spots in Shanghai'
+    '你是一个农业领域的专家，请告诉我如何防治马铃薯根腐病？', '你是一个农业领域的专家，请告诉我地下害虫防治中，如何进行农业防治？'
 ]
 
 #######################################################################
@@ -99,10 +99,10 @@ model = dict(
 #######################################################################
 alpaca_en = dict(
     type=process_hf_dataset,
-    dataset=dict(type=load_dataset, path=alpaca_en_path),
+    dataset=dict(type=load_dataset, path='json', data_files=dict(train=alpaca_en_path)),
     tokenizer=tokenizer,
     max_length=max_length,
-    dataset_map_fn=alpaca_map_fn,
+    dataset_map_fn=None,
     template_map_fn=dict(
         type=template_map_fn_factory, template=prompt_template),
     remove_unused_columns=True,
