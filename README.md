@@ -106,10 +106,10 @@
 - 支持针对农业技术标准、政策法规及科研文献的精确问答。
 - 支持农业历史病虫害案例及相关报告查询，提供原因详细分析、防治措施等。
 
-|   名称   |   底座   |   版本   |   地址   |  微调方法  |  地址  |
-|   ---   | ---   | ---   | ---   | --- |
-|   AgriMind_InternLM2-Chat-1_8B   |   InternLM2-Chat-1_8B   |   V1.0   |      |  QLora  |    |
-|   AgriMind_InternLM2-Chat-7B   |   InternLM2-Chat-7B   |   V1.0   |      |  QLora  |    |
+|   名称   |   底座   |   版本   |   微调方法   |  地址  |  效果  |
+|   ---   | ---   | ---   | ---   | --- |  --- |
+|   AgriMind_InternLM2-Chat-1_8B   |   InternLM2-Chat-1_8B   |   V1.0   |  QLora  |    |    |
+|   AgriMind_InternLM2-Chat-7B   |   InternLM2-Chat-7B   |   V1.0   |  QLora    |    |    |
 |   1   |   2   |   3   |   4   |    |    |
 |   1   |   2   |   3   |   4   |    |    |
 
