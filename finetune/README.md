@@ -87,7 +87,7 @@ alpaca_en = dict(
 
 ```shell
 # 使用xtuner train命令并且使用deepseed来加速训练
-xtuner train /root/AgriMind/finetune/config/internlm2_1_8b/internlm2_1_8b_qlora_alpaca_e3_copy.py --work-dir /root/finetune/train/internlm2_1_8b --deepspeed deepspeed_zero2
+xtuner train /root/AgriMind/finetune/config/internlm2_1_8b/internlm2_1_8b_qlora_alpaca_e3_copy.py --work-dir /root/AgriMind/finetune/train/internlm2_1_8b --deepspeed deepspeed_zero2
 
 ```
 
