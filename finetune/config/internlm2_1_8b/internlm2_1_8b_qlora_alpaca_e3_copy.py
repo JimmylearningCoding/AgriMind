@@ -28,9 +28,9 @@ pretrained_model_name_or_path = '/root/AgriMind/finetune/model/Internlm2-1_8B'
 use_varlen_attn = False
 
 # Data
-alpaca_en_path = 'AgriMind/dataset/xtuner_finetune_agri_data.json'
+alpaca_en_path = '/root/AgriMind/dataset/final_merged_data.jsonl'
 prompt_template = PROMPT_TEMPLATE.default
-max_length = 1024
+max_length = 2048
 pack_to_max_length = True
 
 # parallel
@@ -41,7 +41,7 @@ batch_size = 1  # per_device
 accumulative_counts = 16
 accumulative_counts *= sequence_parallel_size
 dataloader_num_workers = 0
-max_epochs = 3
+max_epochs = 5
 optim_type = AdamW
 lr = 2e-4
 betas = (0.9, 0.999)
@@ -54,10 +54,10 @@ save_steps = 500
 save_total_limit = 2  # Maximum checkpoints to keep (-1 means unlimited)
 
 # Evaluate the generation performance during the training
-evaluation_freq = 500
+evaluation_freq = 300
 SYSTEM = SYSTEM_TEMPLATE.alpaca
 evaluation_inputs = [
-    '你是一个农业领域的专家，请告诉我如何防治马铃薯根腐病？', '你是一个农业领域的专家，请告诉我地下害虫防治中，如何进行农业防治？'
+    '请介绍一下你自己', 'please introduce yourself'
 ]
 
 #######################################################################
