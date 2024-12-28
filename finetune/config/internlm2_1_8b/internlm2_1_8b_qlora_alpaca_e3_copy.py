@@ -24,7 +24,7 @@ from xtuner.utils import PROMPT_TEMPLATE, SYSTEM_TEMPLATE
 #                          PART 1  Settings                           #
 #######################################################################
 # Model
-pretrained_model_name_or_path = '/root/AgriMind/finetune/model/Internlm2-1_8B'
+pretrained_model_name_or_path = '/root/AgriMind/finetune/model/internlm2_1_8b'
 use_varlen_attn = False
 
 # Data
