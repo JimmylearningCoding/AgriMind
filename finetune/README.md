@@ -2,15 +2,19 @@
 
 # 模型微调过程说明文档（以1.8B为例子）
 
-## 1. 环境准备
+## 1. 环境与数据准备
 
-### 1.1
-
-### 1.2
+### 1.1 环境准备
+确保环境可以用到Xtuner工具
 
 ## 2. 模型训练
 
 ### 2.1 数据准备
+```shell
+# 利用合并脚本将自我认知数据集合和专业领域数据进行合并
+python /root/AgriMind/data_generation/combine_json1.py 
+```
+得到/dataset/final_merged_data.json1数据用于模型微调
 
 ### 2.2 基座模型准备
 
@@ -45,13 +49,13 @@ xtuner copy-cfg internlm2_1_8b_qlora_alpaca_e3 /root/AgriMind/finetune/config/in
 
 ```python
 # Model
-pretrained_model_name_or_path = 'internlm/internlm2-1_8b'
+
 pretrained_model_name_or_path = '/root/AgriMind/finetune/model/Internlm2-1_8B'
 use_varlen_attn = False
 
 # Data
-alpaca_en_path = 'tatsu-lab/alpaca'
-alpaca_en_path = 'AgriMind/dataset/xtuner_finetune_agri_data.json'
+
+alpaca_en_path = '/root/AgriMind/dataset/final_merged_data.jsonl'
 prompt_template = PROMPT_TEMPLATE.default
 max_length = 2048
 max_length = 1024
@@ -62,8 +66,8 @@ pack_to_max_length = True
 evaluation_freq = 500
 SYSTEM = SYSTEM_TEMPLATE.alpaca
 evaluation_inputs = [
-    '请给我介绍五个上海的景点', 'Please tell me five scenic spots in Shanghai'
-    '你是一个农业领域的专家，请告诉我如何防治马铃薯根腐病？', '你是一个农业领域的专家，请告诉我地下害虫防治中，如何进行农业防治？'
+    
+    '请介绍一下你自己', 'please introduce yourself'
 ]
 
 #######################################################################
