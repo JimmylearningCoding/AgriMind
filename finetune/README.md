@@ -96,23 +96,22 @@ xtuner train /root/AgriMind/finetune/config/internlm2_1_8b/internlm2_1_8b_qlora_
 1. 创建HuggingFace格式存储目录
 
 ```shell
-mkdir -p /root/AgriMind/finetune/huggingface/18000
+mkdir -p /root/AgriMind/finetune/huggingface/1_8b
 ```
 
 2. 模型转换：使用提供的配置和权重文件进行模型转换
 
 ```shell
 # 使用xtuner convert pth_to_hf命令
-xtuner convert pth_to_hf /root/AgriMind/finetune/config/internlm2_1_8b/inter
-nlm2_1_8b_qlora_alpaca_e3_copy.py /root/AgriMind/finetune/train/internlm2_1_8b/iter_153.pth /root/AgriMind/finetune/huggingface/18000 --fp32
+xtuner convert pth_to_hf /root/AgriMind/finetune/config/internlm2_1_8b/internlm2_1_8b_qlora_alpaca_e3_copy.py /root/AgriMind/finetune/train/internlm2_1_8b/iter_1525.pth /root/AgriMind/finetune/huggingface/1_8b --fp32
 ```
 
 3. 合并模型：合并模型并解决依赖关系
 
 ```shell
-mkdir -p /root/AgriMind/finetune/final_model/AgriMind_Internlm2_1_8b
+mkdir -p /root/AgriMind/finetune/final_model/AgriMind2_1_8b
 export MKL_SERVICE_FORCE_INTEL=1
-xtuner convert merge /root/AgriMind/finetune/model/Internlm2-1_8B/ /root/AgriMind/finetune/huggingface/18000 /root/AgriMind/finetune/final_model/AgriMind_Internlm2_1_8b
+xtuner convert merge /root/AgriMind/finetune/model/internlm2_1_8b /root/AgriMind/finetune/huggingface/1_8b /root/AgriMind/finetune/final_model/AgriMind2_1
 ```
 
 
@@ -120,7 +119,7 @@ xtuner convert merge /root/AgriMind/finetune/model/Internlm2-1_8B/ /root/AgriMin
 4. 测试模型：启动对话来测试下微调后模型效果
 
 ```shell
-xtuner chat /root/AgriMind/finetune/final_model/AgriMind_Internlm2_1_8b --prompt-template internlm2_chat
+xtuner chat /root/AgriMind/finetune/final_model/AgriMind2_1_8b --prompt-template internlm2_chat
 ```
 
 
