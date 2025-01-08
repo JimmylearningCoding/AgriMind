@@ -86,7 +86,7 @@
 <!-- Latest News -->
 # News
 - 2025/1/8: We upload AgriMind_Qwen2.5_7b_instruct_v1
-- 2025/1/8: we upload AgriMind_Internlm2_7b_chat_v1
+- 2025/1/8: We upload AgriMind_Internlm2_7b_chat_v1
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
