@@ -43,8 +43,49 @@ huggingface-cli download --resume-download Qwen/Qwen2.5-7B-Instruct --local-dir 
 3.2 微调方法二：配置文件微调    
 [方法二](https://llamafactory.readthedocs.io/zh-cn/latest/getting_started/sft.html) 
 
-## ⏬ 4. 模型部署
+## ⏬ 4. 模型推理与部署  
+4.1
+LLaMA-Factory推理可以使用 `llamafactory-cli chat inference_config.yaml`或者`llamafactory-cli webchat inference_config.yaml`进行推理与模型进行对话。  
 
+```shell
+model_name_or_path: /group_share/models/Qwen2.5-7B-Instruct
+adapter_name_or_path: /group_share/LLaMA-Factory/saves/Qwen2.5-7B-Instruct/lora/train_2025-01-07-12-21-07
+template: qwen
+infer_backend: vllm  # choices: [huggingface, vllm]
+trust_remote_code: true
+finetuning_type: lora
+```   
+4.2  
+如果把原模型和LoRA适配器进行合并   
+使用 `llamafactory-cli export merge_config.yaml` 指令来合并模型。   
+```shell
+model_name_or_path: /group_share/models/Qwen2.5-7B-Instruct
+adapter_name_or_path: /group_share/LLaMA-Factory/saves/Qwen2.5-7B-Instruct/lora/train_2025-01-07-12-21-07
+template: qwen
+infer_backend: vllm  # choices: [huggingface, vllm]
+trust_remote_code: true
+finetuning_type: lora
+
+### export
+export_dir: /group_share/models/AgriMind_Qwen2.5_7b_instruct_v1
+export_size: 2
+export_device: cpu
+export_legacy_format: false
+
+```    
+4.3   
+将模型以api形式进行部署（其他部署形式可以看官方文档）  
+启动类似 `API_PORT=8000 CUDA_VISIBLE_DEVICES=0 llamafactory-cli api examples/inference/llama3_lora_sft.yaml` 指令，这里的配置文件按自身配置进行修改。  
+
+写一个api_call_exmple.py 来测试一下   
+```shell
+# api_call_example.py
+from openai import OpenAI 
+client = OpenAI(api_key="0",base_url="http://0.0.0.0:8000/v1")
+messages = [{"role": "user", "content": "俺家养了几头牛，最近发现它们长得不快，饲料也吃了不少，但就是不见长肉。俺听说饲料配比很重要，可俺不懂咋配，能不能教教俺咋弄？"}]
+result = client.chat.completions.create(messages=messages, model="/group_share/models/Qwen2.5-7B-Instruct")
+print(result.choices[0].message)
+```
 
 对应同样的输入   
 使用通用大模型的效果：    
