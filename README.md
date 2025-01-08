@@ -85,8 +85,8 @@
 
 <!-- Latest News -->
 # News
-- 2025/1/8 We upload AgriMind_Qwen2.5_7b_instruct_v1.
-- 2025/1/8 we upload AgriMind_Internlm2_7b_chat_v1.
+- 2025/1/8: We upload AgriMind_Qwen2.5_7b_instruct_v1
+- 2025/1/8: we upload AgriMind_Internlm2_7b_chat_v1
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -98,7 +98,7 @@
 ### 初代架构图
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 ### 真正面向广大农民
-在中国，农民受教育程度低是社会广泛普遍的认知，这带给我们的思考是——农民在使用软件/大模型的时候，问题输入会直白粗略的，如何让大模型理解这些粗略直白问题并且给到简单直接的回答？
+在发展中国家，农民受教育程度低是社会广泛普遍的认知，这带给我们的思考是——农民在使用软件/大模型的时候，问题输入会直白粗略的，那么如何让大模型理解这些粗略直白问题并且给到简单直接的回答？    
 我们推出AgriMind——一款聚焦农业领域的智能问答大模型。AgriMind如同农田里的"诸葛孔明",为广大农民提供准确科学解答和决策支持，用LLM助力丰收。
 
 ### 农作物百事通
@@ -106,10 +106,9 @@
 - 农作物问题：病害诊断、施肥建议、种植技术
 - 畜牧养殖问题：疾病诊断、饲料配比、养殖环境管理
 - 农具与农业机械使用：基础操作指南、常见故障诊断、日常保养与维护
--  
 
-|   名称   |   底座   |   版本   |   微调方法   |  地址  | 
-|   ---   | ---   | ---   | ---   | --- |  --- |
+|   名称   |   底座   |   版本   |   微调方法   |  地址  |    
+|   ---   | ---   | ---   | ---   | --- |  
 |   AgriMind_Qwen2.5_7b_instruct_v1   |   Qwen2.5_7b_instruct   |   V1.0   |  Lora  |    |
 |   AgriMind_Internlm2_7b_chat_v1   |   InternLM2-Chat-7B   |   V1.0   |  Lora    |    |
 |   1   |   2   |   3   |   4   |    |
