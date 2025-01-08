@@ -14,4 +14,4 @@
 ## ⏬ 4. 模型部署
 
 
-![compare](AgriMind/finetune/llama_factory/model/AgriMind_Qwen2.5_7b_instruct_v1/after_finetuning.png)
+![compare](after_finetuning.png)
