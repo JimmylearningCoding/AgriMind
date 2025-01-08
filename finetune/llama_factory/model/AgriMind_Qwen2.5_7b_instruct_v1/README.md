@@ -14,4 +14,10 @@
 ## ⏬ 4. 模型部署
 
 
-![compare](after_finetuning.png)
+对应同样的输入   
+使用通用大模型的效果：    
+![before_finetuning](noraml.png)  
+
+
+微调之后的效果：更加亲切直白，跟农民伯伯的距离感没那么强  
+![compare](after_finetuning.png)  
