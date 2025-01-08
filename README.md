@@ -85,8 +85,8 @@
 
 <!-- Latest News -->
 # News
-- 2025/1/8: We upload AgriMind_Qwen2.5_7b_instruct_v1 on Hugging Face
-- 2025/1/8: We upload AgriMind_Internlm2_7b_chat_v1 on Hugging Face
+- 2025/1/9: We upload AgriMind_Qwen2.5_7b_instruct_v1 on ModelScope    
+- 2025/1/9: We upload AgriMind_Internlm2_7b_chat_v1 on ModelScope   
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
