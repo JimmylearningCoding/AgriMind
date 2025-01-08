@@ -38,6 +38,10 @@ huggingface-cli download --resume-download Qwen/Qwen2.5-7B-Instruct --local-dir 
 
 
 ## 🛠️ 3. 模型微调
+3.1 微调方法一：可视化微调  
+![way1](https://github.com/hiyouga/LLaMA-Factory/blob/main/README_zh.md)
+3.2 微调方法二：配置文件微调  
+![way2](https://llamafactory.readthedocs.io/zh-cn/latest/getting_started/sft.html) 
 
 ## ⏬ 4. 模型部署
 
