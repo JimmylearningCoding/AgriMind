@@ -2,7 +2,7 @@ import json
 from openai import OpenAI
 import re
 
-client = OpenAI(api_key="sk-2f231cd5007b4ef7b7960d41c0f74000", base_url="https://api.deepseek.com")
+client = OpenAI(api_key="", base_url="https://api.deepseek.com")
 
 def remove_unwanted_punctuation(text):
     # 定义需要保留的标点符号（可以根据需求调整）
