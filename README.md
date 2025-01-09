@@ -121,7 +121,7 @@
 <!-- Project Highlights -->
 
 # Project Highlights
-
+AgriMind is built on various cutting-edge language models(eg. Internlm, Qwen). Using Xtuner or LLaMA-Factory, we peformed both instruction and fine-tuning, enabling the models to meet personalized user needs.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -138,6 +138,10 @@
 * [![Laravel][Laravel.com]][Laravel-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JQuery][JQuery.com]][JQuery-url] -->
+
+[![LLaMA-Factory][https://img.shields.io/badge/LLaMAFactory-grey]][https://github.com/hiyouga/LLaMA-Factory/tree/main]
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
