@@ -140,8 +140,8 @@ AgriMind is built on various cutting-edge language models(eg. Internlm, Qwen). U
 * [![JQuery][JQuery.com]][JQuery-url] -->
 
 * [![LLaMA-Factory](https://img.shields.io/badge/LLaMAFactory-grey)](https://github.com/hiyouga/LLaMA-Factory/tree/main)
-
-
+* [![xtuner](https://img.shields.io/badge/xtuner-blue)](https://github.com/InternLM/xtuner)
+* [![lmdeploy(https://img.shields.io/badge/lmdeploy-blue)]](https://github.com/InternLM/lmdeploy)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
