@@ -36,7 +36,7 @@ from langchain_community.embeddings import ZhipuAIEmbeddings
 
 embedding = ZhipuAIEmbeddings(
     model = 'embedding-3',
-    api_key = '8a44b4bdf049204472caf050d0716c68.QLZ5HViDamXwPIyu' 
+    api_key = '.' 
 )
 vectorstore = Qdrant.from_documents(
     documents=chunked_documents, # 以分块的文档
@@ -56,7 +56,7 @@ logging.getLogger('langchain.retrievers.multi_query').setLevel(logging.INFO)
 
 llm = ChatOpenAI(
     model = 'deepseek-chat',
-    openai_api_key = 'sk-2f231cd5007b4ef7b7960d41c0f74000',
+    openai_api_key = 'sk-',
     openai_api_base = 'https://api.deepseek.com',
     max_tokens = 1024
 )
@@ -106,7 +106,7 @@ def qvq_interface(question, image_path):
         return '请上传图片'
     base64_image = encode_image(image_path)
     client = OpenAI(
-        api_key = "sk-f8046ecc138a48e0b604914c762b5b31",
+        api_key = "sk-",
         base_url = "https://dashscope.aliyuncs.com/compatible-mode/v1"
     )
     response = client.chat.completions.create(
