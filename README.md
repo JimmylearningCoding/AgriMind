@@ -85,6 +85,7 @@
 
 <!-- Latest News -->
 # News
+- 2025/2/25: Relased an AgriMind demo
 - 2025/1/9: We upload AgriMind_Qwen2.5_7b_instruct_v1 on ModelScope    
 - 2025/1/9: We upload AgriMind_Internlm2_7b_chat_v1 on ModelScope   
 
