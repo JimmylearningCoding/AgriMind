@@ -111,8 +111,7 @@
 |   ---   | ---   | ---   | ---   | --- |  
 |   AgriMind_Qwen2.5_7b_instruct_v1   |   Qwen2.5_7b_instruct   |   V1.0   |  Lora  |  [ModelScope](https://www.modelscope.cn/models/HeZiming0619/AgriMind_Qwen2.5_7b_instruct_v1/files)  |
 |   AgriMind_Internlm2_7b_chat_v1   |   InternLM2-Chat-7B   |   V1.0   |  Lora    |  [ModelScope](https://www.modelscope.cn/models/HeZiming0619/AgriMind_Qwen2.5_7b_instruct_v1/files) |
-|   1   |   2   |   3   |   4   |    |
-|   1   |   2   |   3   |   4   |    |
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
