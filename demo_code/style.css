@@ -1,0 +1,88 @@
+.header {
+    display: flex; 
+    justify-content: space-between;  /* Distribute space between items */
+    align-items: center;  /* Center items vertically */
+    font-size: 3rem;  /* Adjust font size for center title */
+    padding: 20px;  /* Add some padding */           
+}
+.header-left, .header-right {
+    font-size: 1.2rem;
+    color: #333;
+}
+.header-center {
+    text-align: center;
+    font-size: 5rem;
+    color: #333;
+}
+.button { background-color: #4CAF50; color: white; padding: 12px 24px; border: none; border-radius: 5px; font-size: 1.2rem; transition: background-color 0.3s ease; }
+.button:hover { background-color: #45a049; }
+.output { background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); font-size: 1.1rem; margin-top: 20px; color: #333; }
+.footer { text-align: center; color: #777; margin-top: 30px; font-size: 0.9rem; }
+.weather-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.weather-column {
+    flex: 1;
+    min-width: 250px;
+}
+
+.weather-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    width: 100%;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.weather-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.weather-output {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    margin-top: 15px;
+}
+.chatbot { display: flex; flex-direction: column; }
+.chatbot .message { display: flex; margin-bottom: 10px; }
+.chatbot .message.user { justify-content: flex-start; text-align: left;}
+.chatbot .message.ai { justify-content: flex-end; text-align: right}
+.chatbot .message .avatar { width: 40px; height: 40px; border-radius: 50%; margin-right: 10px; }
+.chatbot .message .content { max-width: 70%; padding: 10px; border-radius: 10px; }
+.chatbot .message.user .content { background-color: #e1f5fe; }
+.chatbot .message.ai .content { background-color: #f5f5f5; }
+           
+.container {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-wrapper {
+    background: #fff;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 动画效果 */
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
