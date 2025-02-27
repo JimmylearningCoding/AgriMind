@@ -150,7 +150,7 @@ AgriMind is built on various cutting-edge language models(eg. Internlm, Qwen). U
 <!-- Demo -->
 
 # Demo
-
+<video controls src="AgriMind_demo.mp4" title="Title"></video>
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
