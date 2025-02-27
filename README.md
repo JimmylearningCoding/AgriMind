@@ -150,7 +150,9 @@ AgriMind is built on various cutting-edge language models(eg. Internlm, Qwen). U
 <!-- Demo -->
 
 # Demo
-[Download AgriMind Demo Video](https://github.com/JimmylearningCoding/AgriMind/issues/1#issue-2883435978)
+![demo1](image.png)
+![demo2](image-1.png)
+[AgriMind Demo Video](https://github.com/JimmylearningCoding/AgriMind/issues/1#issue-2883435978)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
