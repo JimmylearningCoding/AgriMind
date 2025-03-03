@@ -4,7 +4,7 @@
 1.1 Ubuntu
 - Python 3.10.16
 - Pytorch 2.5.1
-- GPU A100(24GB)
+- GPU (at least 24Gb GPU)
 
 1.2 LLaMA-Factory框架
 ```shell
